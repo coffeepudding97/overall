@@ -1,0 +1,488 @@
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page_title{
+    padding: 60px 300px;
+    background: #92d5ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+    font-family: "Tenada";
+}
+.page_title>h1{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+button{
+    padding: 0;
+}
+
+.contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 180px;
+}
+.contents button, input, textarea {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contents_top{
+    display: flex;
+    border-top: 10px solid #3e3d55;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3e3d55;
+    justify-content: space-between;
+    border-bottom: 2px solid #3e3d55;
+}
+
+/*스쿼드 정보*/
+.contents_left{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    padding: 100px;
+}
+.squad_edit{
+    border: none;
+    background: #3e3d55;
+    color: white;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 15px;
+}
+.delete_btn{
+    background: #656477;
+}
+.contents_list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#invite_list{
+    display: none;
+    position: absolute;
+    top: 820px;
+    background-color: #f6f6f6;
+    border: 1px solid lightgray;
+    width: 350px;
+    padding: 5px 5px 0 5px;
+    font-size: 15px;
+    z-index: 1;
+    margin-left: 30px;
+}
+.inviting_left{
+    display: flex;
+}
+.inviting_num{
+    margin-right: 15px;
+}
+.contents_list>label{
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.small_title {
+    font-weight: 700;
+    color: #3f3f3f;
+}
+#name{
+    height: 40px;
+}
+.contents_list>textarea{
+    height: 70px;
+    padding-top: 10px;
+}
+.error{
+    color: red;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+}
+#error_name{
+    display: none;
+}
+#error_invite{
+    display: none;
+    background: #f6f6f6;
+}
+.invited_btn{
+    border: none;
+    background: #3e3d55;
+    color: white;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+}
+#invite_cnt{
+    display: none;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: red;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 11px;
+    margin: -15px -5px 0 0;
+    float: right;
+    outline: none;
+}
+.input_area{
+    border-radius: 5px;
+    border: 3px solid #3e3d55;
+    padding-left: 10px;
+}
+
+.popup_area{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+#email{
+    width: 75%;
+    height: 30px;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+.small_btn{
+    width: 20%;
+    border: none;
+    background: #3e3d55;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+.squad_member{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.email_area{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px 0 10px;
+    justify-content: space-between;
+}
+.list_area{
+    padding: 10px 0;
+}
+.contents_member{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    gap:10px;
+}
+.list_pos{
+    width: 60px;
+    text-align: center;
+}
+.pos_input{
+    border: none;
+    outline: none;
+    width: 60px;
+    text-align: center;
+}
+
+.name {
+    width:100%;
+    text-align: center;
+}
+.list_name{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list_name.small_title {
+    width:100%;
+    justify-content: center;
+}
+.list_pos.small_title h1 {
+    width:60px;
+}
+
+.list_over.small_title h1 {
+    width:40px;
+}
+.list_over{
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_over h1 {
+    width:40px;
+    text-align: center;
+}
+.list_out{
+    display: flex;
+    width: 100%;
+    gap:10px;
+}
+
+.out_btn_wrap {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.out_btn{
+    width: 60px;
+    height: 30px;
+    border: none;
+    background: #3e3d55;
+    color: white;
+    cursor: pointer;
+}
+.center_line{
+    width: 1px;
+    border-left: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+/*포지션*/
+.right_area{
+width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:100px;
+}
+.formation_top{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+#ovr{
+    border: none;
+    outline: none;
+    width: 40px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 0 0 5px;
+}
+.formation{
+    width: 100%;
+    box-sizing: border-box;
+    background: #161616;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formation_ovr{
+    width: 100%;
+    box-sizing: border-box;
+    background: #9b9aa6;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents_right{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/soccer_field.png");
+    background-repeat: no-repeat;
+    height: 852px;
+    width: 602px;
+    justify-content: flex-end;
+}
+.position_area{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.area_img{
+    background-image: url("../images/pos_area.png");
+    background-repeat: no-repeat;
+    width: 92px;
+    height: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.position_row{
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+}
+.pos_name{
+    margin-bottom: 10px;
+}
+.position_add{
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:5px;
+
+}
+#select_box{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    border: 1px solid lightgray;
+    padding: 5px 5px 20px 5px;
+    font-size: 15px;
+    width: 300px;
+    height: 300px;
+    top: 800px;
+    margin-left: 145px;
+}
+#A{
+    color: #bc0f0f;
+}
+#B, #C{
+    color: #468cff;
+}
+#D{
+    color: #469719;
+}
+#E{
+    color: #ffae44;
+}
+.sel_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pos_text{
+    margin-bottom:25px;
+    font-weight: bold;
+}
+.pos_delete{
+    background: #656477;
+}
+
+/*채팅*/
+.chat_title{
+    font-size: 28px;
+}
+.contents_bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    min-width: 1050px;
+    margin: 0 auto;
+}
+.chat_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chat{
+    width: 94%;
+    height: 300px;
+    background-color: #f6f6f6;
+    padding: 35px 3% 0 3%;
+    border-top: 10px solid #3e3d55;
+}
+#chat::-webkit-scrollbar {
+    width: 10px;
+}
+#chat::-webkit-scrollbar-thumb {
+    background: #25c7f5;
+}
+
+#chat::-webkit-scrollbar-track {
+    background: #d6d8e0;
+}
+.send_area{
+    width: 100%;
+    margin: 20px 0;
+}
+#chatting{
+    width: 85%;
+    height: 60px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+}
+.send_btn{
+    border: none;
+    background: #25c7f5;
+    color: white;
+    width: 15%;
+    height: 60px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 18px;
+    float: right;
+}
+.chat_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.chat_name{
+    font-weight: 700;
+    color: #3f3f3f;
+}
+.chat_contents{
+    margin: 13px 0;
+    display: flex;
+    align-items: center;
+}
+.chat_date{
+    color: gray;
+    font-size: small;
+    margin: 0 10px;
+}
+.chat_delete{
+    width: 21px;
+    height: 21px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.shadow{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}

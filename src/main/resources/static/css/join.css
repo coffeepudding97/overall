@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background:#f3f5f7;
+    font-family: "Noto Sans KR";
+}
+
+input {
+    font-family: "Noto Sans KR";
+}
+
+#root {
+    padding:100px;
+}
+
+
+#main-section {
+    padding:100px;
+}
+
+.join_container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    width: 800px;
+    background: #fff;
+    padding:100px;
+}
+
+#title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:50px;
+    gap:20px;
+}
+
+#title h1 {
+    font-size:30px;
+    font-family: 'MBC1961GulimM';
+}
+
+#title h2 {
+    font-size:30px;
+    font-family: 'Tenada';
+}
+
+div[class^=input-control]{
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+}
+
+.label {
+    margin-bottom:10px;
+}
+
+div[class^=input-control] input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+div#div_code.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+div[class^=input-control] button {
+    margin-top:10px;
+    margin-bottom:10px;
+    border:none;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 10px;
+    background:#92d5ff;
+    font-size:18px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.input-control .small_hint {
+    color: #ff3860;
+}
+
+#email-validation {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.input_and_button {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+#dup_btn {
+    width: 110px;
+    height:40px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:#fff;
+    padding:5px;
+    color: #000000;
+}
+
+#dup_btn:hover{
+    cursor:pointer;
+    color:#fff;
+    background:#d91950;
+}
+
+#checkEmail {
+    width: 110px;
+    height:40px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:#fff;
+    padding:5px;
+    color: #000000;
+}
+
+#checkEmail:hover{
+    cursor:pointer;
+    color:#fff;
+    background:#d91950;
+}
+
+#verify_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #92d5ff;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#verify_btn:hover{
+    cursor:pointer;
+    color:#fff;
+    background:#d91950;
+
+}
+
+#submit_btn {
+    margin-top:60px;
+    margin-bottom:20px;
+    border:none;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 10px;
+    background:#92d5ff;
+    font-size:18px;
+    color:#fff;
+    cursor:pointer;
+}

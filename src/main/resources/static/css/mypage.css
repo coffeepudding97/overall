@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'IAMAPLAYER';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Makgeolli';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Makgeolli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contents {
+    display:flex;
+    justify-content: center;
+    padding:100px;
+    gap:50px;
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+.contents_menu {
+    display:flex;
+    flex-direction: column;
+}
+
+.contents_menu a {
+    display:inline-block;
+    width:100%;
+    padding:20px;
+    border:1px solid #a4a4b7;
+    color:#a4a4b7;
+    border-top:none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:18px;
+}
+
+.contents_menu .menu:last-child a {
+    border-top:none;
+    color:#a4a4b7;
+}
+
+.contents_menu .on a {
+    border-color:black;
+    color:black;
+    border-top:1px solid black;
+}
+
+.contents_menu .menu {
+    display:flex;
+    width:100%;
+}
+
+.contents_menu .menu a h1 {
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+.mypage_contents {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    padding:100px;
+
+}
+
+.mypage_contents .overall {
+    display:flex;
+    flex-direction: column;
+}
+
+.mypage_contents .overall h1 {
+    font-size:22px;
+}
+.mypage_contents .overall h2 {
+    font-family: "MBC1961GulimM";
+    font-size:22px;
+    width:30px;
+}
+
+.mypage_contents .overall_bottom {
+    display:flex;
+    gap:40px;
+    font-family: "IAMAPLAYER" ,"Tenada";
+}
+
+.overall .overall_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    font-family: "IAMAPLAYER";
+}
+
+.overall .overall_left .nickname {
+    font-size:36px;
+    font-family: "IAMAPLAYER" ,"Tenada";
+    white-space: nowrap;
+}
+
+.overall .overall_left .position {
+    font-size:36px;
+}
+
+.mypage_contents .overall_param {
+    display:flex;
+    align-items: center;
+}
+
+
+
+.mypage_contents #param h1 {
+    font-size:72px;
+}
+
+.stats_wrap {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+}
+
+.stats_wrap #stat {
+    padding:20px;
+    border-bottom:none;
+}
+
+#stat h1 {
+    width:110px;
+}
+
+ .graph_wrap {
+    width: 100%;
+    background-color: #dedede;
+     border-radius: 5px;
+
+}
+
+.stats_wrap .graph_wrap .physical_data {
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background: rgb(244,83,96);
+    background: linear-gradient(90deg, rgba(244,83,96,1) 33%, rgba(255,61,77,1) 93%);
+    color: #111;
+    text-indent: -9999px;
+    border-radius: 5px;
+}
+
+.stats_wrap .graph_wrap .speed_data {
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background: rgb(93,134,255);
+    background: linear-gradient(90deg, rgba(93,134,255,1) 33%, rgba(32,88,251,1) 93%);
+    color: #111;
+    text-indent: -9999px;
+    border-radius: 5px;
+}
+
+.stats_wrap .graph_wrap .rating_data {
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background: rgb(70,199,189);
+    background: linear-gradient(90deg, rgba(70,199,189,1) 33%, rgba(0,201,185,1) 93%);
+    color: #111;
+    text-indent: -9999px;
+    border-radius: 5px;
+}
+
+
+#stat {
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+
+.foot_wrap {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot_wrap h3 {
+    color:white;
+    font-size:42px;
+    font-family: MBC1961GulimM;
+}
+
+.foot_wrap .left_foot {
+    width:100%;
+    background: url("../images/left_foot.png") 100% 50% no-repeat;
+    background-size: contain;
+    padding:100px 50px;
+}
+
+.foot_wrap .right_foot {
+    width:100%;
+    background: url("../images/right_foot.png") 0 50% no-repeat;
+    background-size: contain;
+    padding:100px 50px;
+}
+
+
+.style_wrap {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    padding-top:0;
+    font-size:60px;
+    font-family: "Makgeolli";
+}
+
+.style_wrap #style {
+    border:1px solid black;
+    border-radius:60px;
+    padding:20px;
+    padding-top:0;
+}
+
+.alert_msg {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding:100px 0;
+}
+
+.alert_msg h1 {
+    font-size:32px;
+    font-family: 'MBC1961GulimM';
+}
+
+
